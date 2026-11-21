@@ -4,18 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PT Industri Nabati Lestari | Industri Kelapa Sawit</title>
-  <meta name="description" content="Profil PT Industri Nabati Lestari, perusahaan refinery dan fraksinasi minyak kelapa sawit di KEK Sei Mangkei, Sumatera Utara.">
-  <meta name="keywords" content="PT Industri Nabati Lestari, INL, kelapa sawit, olein, stearin, PFAD, Sei Mangkei">
+  <title>Sarangeui Oppa | Makanan Korea di Yogyakarta</title>
+  <meta name="description" content="Sarangeui Oppa, UMKM kuliner Korea halal di Minomartani, Sleman, Yogyakarta. Makanan Korea oleh koki Korea sejak 2017.">
+  <meta name="keywords" content="Sarangeui Oppa, makanan Korea, Jogja, ayam goreng Korea, bibimbap, tteokbokki, halal">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/about/Logo Sarangeui Oppa.jpg" rel="icon" type="image/png">
+  <link href="assets/img/about/Logo Sarangeui Oppa.jpg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Font judul hero -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,9 +29,107 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <!-- Style khusus website ini -->
-  <link href="assets/css/custom.css" rel="stylesheet">
-  
+  <style>
+    .org-icon svg { width: 38px; height: 38px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .org-icon { width: 72px; height: 72px; border-radius: 50%; background: #A3E635; border: 2px solid #000; color: #000; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 12px; }
+
+    /* ===== Logo kartu sosial media ===== */
+    .social-card i.main-icon { font-size: 2.25rem; }
+    .social-card i.bi-instagram.main-icon { color: #E4405F; }
+    .social-card i.bi-whatsapp.main-icon { color: #25D366; }
+    .social-card .brand-logo { width: 36px; height: 36px; display: inline-block; }
+  </style>
+  <style>
+    /* ===== Judul hero: SARANGEUI OPPA ===== */
+    body .hero .hero-title {
+      font-family: "Black Han Sans", "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 68px;
+      letter-spacing: 2px;
+      line-height: 1.15;
+      color: #A3E635;
+      -webkit-text-stroke: 3px #000000;
+      paint-order: stroke fill;
+      text-shadow: 5px 5px 0 #3F6212;
+    }
+    body .hero .hero-title .typed {
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      font-size: 30px;
+      letter-spacing: 0;
+      -webkit-text-stroke: 0;
+      text-shadow: none;
+    }
+    @media (max-width: 768px) {
+      body .hero .hero-title { font-size: 48px; -webkit-text-stroke: 2px #000000; text-shadow: 3px 3px 0 #3F6212; }
+      body .hero .hero-title .typed { font-size: 24px; }
+    }
+    @media (max-width: 575px) {
+      body .hero .hero-title { font-size: 38px; }
+      body .hero .hero-title .typed { font-size: 20px; }
+    }
+
+    /* ===== Judul tiap section ===== */
+    body .section-title h2 {
+      display: inline-block;
+      padding: .35em 1.3em;
+      font-family: "Black Han Sans", "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+      color: #000000;
+      background: #A3E635;
+      border: 3px solid #000000;
+      border-radius: 50px;
+      box-shadow: 6px 6px 0 #3F6212;
+      transition: transform .25s, box-shadow .25s;
+    }
+    body .section-title h2::before,
+    body .section-title h2::after { display: none; }
+    body .section-title h2:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 9px 9px 0 #3F6212;
+    }
+    body .section-title p {
+      margin-top: 1.6rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #3F6212;
+    }
+    @media (max-width: 768px) {
+      body .section-title h2 { font-size: 1.7rem; padding: .3em 1em; box-shadow: 4px 4px 0 #3F6212; }
+      body .section-title p { font-size: 1rem; }
+    }
+
+    /* ===== Label kartu Profil (Sejarah, Visi, dst.) ===== */
+    body .ht-year {
+      padding: .35rem 1.2rem;
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: .3px;
+      color: #000000;
+      background: #A3E635;
+      border: 2px solid #000000;
+      box-shadow: 3px 3px 0 #3F6212;
+    }
+    body .ht-card h5 { font-size: 1.3rem; }
+
+    /* ===== Ikon bagan struktur: tepat di tengah ===== */
+    .org-icon i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    .org-icon i::before {
+      display: block;
+      line-height: 1;
+      vertical-align: 0 !important;
+    }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -36,25 +137,27 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/about/logo INL.png" alt="Logo PT Industri Nabati Lestari">
-        <h1 class="sitename">PT Industri Nabati Lestari</h1>
+        <img src="assets/img/about/Logo Sarangeui Oppa.jpg" alt="Logo Sarangeui Oppa">
+        <h1 class="sitename">Sarangeui Oppa</h1>
       </a>
+
+      <!-- Pil info di tengah header (tampil di layar lebar) -->
+      <div class="header-tags d-none d-xxl-flex">
+        <span class="header-tag"><i class="bi bi-stars"></i> Makanan Korea Asli Resep dari Korea</span>
+
+      </div>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#sejarah">Sejarah</a></li>
-          <li><a href="#struktur">Struktur Perusahaan</a></li>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#sertifikasi">Sertifikasi</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#struktur">Struktur</a></li>
+          <li><a href="#menu">Menu</a></li>
           <li><a href="#lokasi">Lokasi</a></li>
           <li><a href="#sosial">Sosial Media</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <!-- Tombol ini mengarah ke bagian Sosial Media -->
-      <a class="btn-getstarted" href="#sosial">Hubungi Kami</a>
 
     </div>
   </header>
@@ -68,47 +171,32 @@
 
           <div class="hero-main-content text-center">
             <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
-              PT INDUSTRI NABATI LESTARI<br>
-              <span class="typed" data-typed-items="Industri Kelapa Sawit, Refinery &amp; Fraksinasi, Anak Usaha PTPN"></span>
+              SARANGEUI OPPA<br>
+              <span class="typed" data-typed-items="Makanan Korea oleh Koki Korea, Semua Makanan Halal, Harga Ramah di Kantong"></span>
             </h1>
 
             <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-              Perusahaan pengolahan minyak kelapa sawit (CPO) menjadi produk turunan berkualitas, berlokasi di Kawasan Ekonomi Khusus Sei Mangkei, Sumatera Utara.
+              UMKM kuliner Korea di Minomartani, Sleman, Yogyakarta, yang beroperasi sejak 2017. Nikmati <span class="hl">ayam goreng Korea, bibimbap, kimbap, tteokbokki</span>, dan hidangan Korea lainnya dengan <span class="hl">harga ramah mahasiswa</span>.
             </p>
 
-            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-              <a href="#sejarah" class="action-btn primary">
-                <span>Kenali Kami</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-              <a href="#produk" class="action-btn secondary">
-                <i class="bi bi-box-seam"></i>
-                <span>Lihat Produk</span>
-               </a>
-               <a href="https://www.youtube.com/watch?v=43_VFkCnGQ0" class="action-btn secondary glightbox" aria-label="Tonton video profil perusahaan">
-                <i class="bi bi-play-circle"></i>
-                <span>Tonton Video</span>
-              </a>
-            </div> 
             <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
               <div class="image-wrapper">
-                <!-- Ganti gambar ini dengan foto pabrik / kebun sawit -->
-                <img src="assets/img/about/INL.png" class="img-fluid" alt="PT Industri Nabati Lestari">
+                <img src="assets/img/about/Papan Nama Sarangeui Oppa.jpeg" class="img-fluid" alt="Papan nama Sarangeui Oppa">
                 <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
                   <div class="card-content">
                     <div class="card-icon"><i class="bi bi-calendar-check"></i></div>
                     <div class="card-info">
-                      <h4>2015</h4>
-                      <p>Tahun Berdiri</p>
+                      <h4>2017</h4>
+                      <p>Mulai Beroperasi</p>
                     </div>
                   </div>
                 </div>
                 <div class="floating-card card-2" data-aos="fade-left" data-aos-delay="700">
                   <div class="card-content">
-                    <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                    <div class="card-icon"><i class="bi bi-card-list"></i></div>
                     <div class="card-info">
-                      <h4>600.000</h4>
-                      <p>Ton/Tahun Kapasitas</p>
+                      <h4>16 Menu</h4>
+                      <p>Pilihan Hidangan</p>
                     </div>
                   </div>
                 </div>
@@ -121,93 +209,68 @@
       </div>
     </section><!-- /Beranda -->
 
-    <!-- ===================== SEJARAH ===================== -->
-    <section id="sejarah" class="about section">
+    <!-- ===================== PROFIL ===================== -->
+    <section id="profil" class="about section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Sejarah Perusahaan</h2>
-        <p>Perjalanan PT Industri Nabati Lestari dalam mengembangkan industri hilir kelapa sawit</p>
+        <h2>Profil Usaha</h2>
+        <p>Mengenal lebih dekat Sarangeui Oppa, usaha kuliner yang hadir menemani selera<br class="d-none d-md-inline"> dan keseharian anak muda hingga orang dewasa di Jogja</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <!-- Pengantar -->
-        <div class="row align-items-center g-5">
-
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="image-wrapper">
-              <img src="assets/img/about/INL2.png" class="img-fluid rounded" alt="Sejarah PT Industri Nabati Lestari">
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <p>
-              PT Industri Nabati Lestari (INL) didirikan pada 23 Desember 2015 sebagai anak usaha
-              PT Perkebunan Nusantara III (PTPN III) dan PT Perkebunan Nusantara IV (PTPN IV).
-              Perusahaan ini dibentuk untuk mengembangkan industri hilir kelapa sawit, yaitu mengolah
-              <em>Crude Palm Oil</em> (CPO) menjadi produk turunan yang bernilai tambah dan berkualitas
-              internasional, sehingga hasil perkebunan kelompok PTPN tidak hanya dijual sebagai bahan mentah.
-            </p>
-            <p>
-              Pabrik INL dibangun di Kawasan Ekonomi Khusus (KEK) Sei Mangkei, Kabupaten Simalungun,
-              Sumatera Utara. Kawasan industri terpadu ini menjamin ketersediaan bahan baku dan membuat
-              biaya produksi lebih efisien, sehingga harga produk lebih kompetitif.
-            </p>
-
-            <div class="history-stats">
-              <div class="history-stat">
-                <strong>2015</strong>
-                <span>Tahun berdiri</span>
-              </div>
-              <div class="history-stat">
-                <strong>600.000 ton</strong>
-                <span>Kapasitas per tahun</span>
-              </div>
-              <div class="history-stat">
-                <strong>PTPN III &amp; IV</strong>
-                <span>Induk perusahaan</span>
-              </div>
-              <div class="history-stat">
-                <strong>Sei Mangkei</strong>
-                <span>Lokasi pabrik (KEK)</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Timeline -->
         <div class="history-timeline">
 
           <div class="ht-item" data-aos="fade-right">
             <div class="ht-card">
-              <span class="ht-year">23 Desember 2015</span>
-              <h5>Pendirian Perusahaan</h5>
-              <p>PT Industri Nabati Lestari resmi didirikan sebagai anak usaha PTPN III dan PTPN IV untuk menggarap industri hilir kelapa sawit.</p>
+              <span class="ht-year">Sejarah</span>
+              <h5>Awal Berdiri Tahun 2017</h5>
+              <p>Sarangeui Oppa mulai beroperasi di Jalan Gurameh I, Minomartani, Sleman, sebagai kedai makanan Korea sederhana milik Mas Kim.</p>
             </div>
           </div>
 
           <div class="ht-item" data-aos="fade-left">
             <div class="ht-card">
-              <span class="ht-year">Tahap Pembangunan</span>
-              <h5>Pabrik di KEK Sei Mangkei</h5>
-              <p>Dibangun pabrik pemurnian (<em>refinery</em>) dan fraksinasi minyak kelapa sawit berkapasitas 600.000 ton per tahun di Kawasan Ekonomi Khusus Sei Mangkei.</p>
+              <span class="ht-year">Konsep Usaha</span>
+              <h5>Makanan Korea oleh Koki Korea</h5>
+              <p>Dengan slogan "Makanan Korea oleh Koki Korea", seluruh makanan dan minuman dinyatakan halal dan dijual dengan harga ramah di kantong, sehingga banyak diminati mahasiswa dan anak muda.</p>
             </div>
           </div>
 
           <div class="ht-item" data-aos="fade-right">
             <div class="ht-card">
-              <span class="ht-year">15 Januari 2018</span>
-              <h5>Kerja Sama Pemasaran</h5>
-              <p>INL menandatangani nota kesepahaman (MoU) dengan PT Perusahaan Perdagangan Indonesia (PPI) untuk memperkuat pemasaran produk minyak goreng (olein), dengan prioritas alokasi volume olein bagi PT PPI.</p>
+              <span class="ht-year">Menu Unggulan</span>
+              <h5>Ayam Goreng Korea</h5>
+              <p>Ayam goreng Korea menjadi menu unggulan dan terlaris, dilengkapi bibimbap, kimbap, tteokbokki, kimchi jjigae, dan berbagai hidangan Korea lainnya.</p>
             </div>
           </div>
 
           <div class="ht-item" data-aos="fade-left">
             <div class="ht-card">
               <span class="ht-year">Saat Ini</span>
-              <h5>Produksi Olein, Stearin, dan PFAD</h5>
-              <p>INL memproduksi olein, stearin, dan PFAD untuk pasar bulk maupun ritel. Olein juga dipasarkan untuk konsumen dengan merek Salvaco, dengan pengendalian kualitas yang ketat.</p>
+              <h5>Dikelola Delapan Orang</h5>
+              <p>Pelanggan bisa makan di tempat atau memesan lewat GoFood dan GrabFood. Rasa makanannya dinilai cocok dengan selera lidah masyarakat Jogja.</p>
+            </div>
+          </div>
+
+          <div class="ht-item" data-aos="fade-right">
+            <div class="ht-card">
+              <span class="ht-year">Visi</span>
+              <h5>Cita-cita Kami</h5>
+              <p>Menjadi kedai makanan Korea di Yogyakarta yang menyajikan cita rasa Korea yang halal, terjangkau, dan dekat dengan selera pelanggan.</p>
+            </div>
+          </div>
+
+          <div class="ht-item" data-aos="fade-left">
+            <div class="ht-card">
+              <span class="ht-year">Misi</span>
+              <h5>Langkah Kami</h5>
+              <ol class="mb-0 ps-3">
+                <li>Menyajikan hidangan khas Korea dengan cita rasa yang mendekati aslinya dan harga yang ramah untuk pelajar dan mahasiswa.</li>
+                <li>Menjaga kehalalan seluruh makanan dan minuman yang disajikan.</li>
+                <li>Menghadirkan suasana kedai yang hangat seperti di rumah, dengan pelayanan ramah dan membantu pelanggan memahami menu.</li>
+                <li>Terus memperbarui variasi menu dan layanan sesuai tren kuliner Korea dan kebutuhan pelanggan.</li>
+              </ol>
             </div>
           </div>
 
@@ -215,334 +278,322 @@
 
       </div>
 
-    </section><!-- /Sejarah -->
+    </section><!-- /Profil -->
 
-    <!-- ===================== STRUKTUR PERUSAHAAN ===================== -->
+    <!-- ===================== STRUKTUR ===================== -->
     <section id="struktur" class="features section light-background">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Struktur Perusahaan</h2>
-        <p>Struktur organisasi PT Industri Nabati Lestari</p>
+        <h2>Struktur Usaha</h2>
+        <p>Delapan orang bekerja sama menjaga dapur dan layanan Sarangeui Oppa</p>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!-- Bagan struktur (pohon + foto) -->
-<div class="org-tree">
-  <div class="text-center" data-aos="fade-up"><span class="org-label">Dewan Komisaris</span></div>
-  <div class="org-box" data-aos="fade-up">
-    <div class="org-level">
-      <div class="org-node">
-        <img src="assets/img/person/Amran%20Sinaga.jpg" alt="Ir. H. Amran Sinaga, M.Sc." loading="lazy">
-        <h5>Ir. H. Amran Sinaga, M.Sc.</h5>
-        <span class="role">Komisaris Utama</span>
-        <span class="sub">Komisaris Independen</span>
+        <div class="org-tree">
+
+          <div class="text-center" data-aos="fade-up"><span class="org-label">Pemilik</span></div>
+          <div class="org-box" data-aos="fade-up">
+            <div class="org-level">
+                <div class="org-node">
+                  <div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17 2.5 7l5 4.5L12 4l4.5 7.5 5-4.5L21 17z"/><path d="M3.5 20.5h17"/></svg></div>
+                  <h5>Mas Kim</h5>
+                  <span class="role">Pemilik</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="org-stem"></div>
+
+          <div class="text-center" data-aos="fade-up"><span class="org-label">Tim Inti</span></div>
+          <div class="org-box" data-aos="fade-up">
+            <div class="org-level">
+                <div class="org-node">
+                  <div class="org-icon"><i class="bi bi-boxes"></i></div>
+                  <h5>Sasa</h5>
+                  <span class="role">Manajer Persediaan</span>
+                </div>
+                <div class="org-node">
+                  <div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v18"/><path d="M12.5 8h4M12.5 12h4M12.5 16h4"/></svg></div>
+                  <h5>Izka</h5>
+                  <span class="role">Staf Dapur</span>
+                </div>
+                <div class="org-node">
+                  <div class="org-icon"><i class="bi bi-cart-check"></i></div>
+                  <h5>Yuli</h5>
+                  <span class="role">Admin Pembelian</span>
+                </div>
+            </div>
+          </div>
+
+          <div class="org-stem"></div>
+
+          <div class="text-center" data-aos="fade-up"><span class="org-label">Karyawan Operasional</span></div>
+          <div class="org-box" data-aos="fade-up">
+            <div class="org-level">
+                <div class="org-node">
+                  <!-- Kasir: uang kertas, simetris di tengah -->
+<div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="6" rx="1"/><path d="M9 9v2M15 9v2"/><path d="M4 21v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8z"/><path d="M8 15h.01M12 15h.01M16 15h.01M8 18h.01M12 18h.01M16 18h.01"/></svg></div>                  <h5>Ayu</h5>
+                  <span class="role">Kasir</span>
+                </div>
+                <div class="org-node">
+                  <div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14.5a4 4 0 0 1-.8-7.9A5 5 0 0 1 12 3a5 5 0 0 1 5.8 3.6A4 4 0 0 1 17 14.5"/><path d="M7 14.5V21h10v-6.5"/><path d="M7 18h10"/></svg></div>
+                  <h5>Widhi</h5>
+                  <span class="role">Koki</span>
+                </div>
+                <div class="org-node">
+                  <!-- Pramusaji: makanan dan minuman di atas nampan -->
+                  <div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="17" width="20" height="3" rx="1.5"/><path d="M4.5 17c0-3.2 1.8-5.2 4-5.2s4 2 4 5.2"/><path d="M8.5 11.8V10.5"/><path d="M15 17l-.7-7h5.4L19 17"/><path d="M18 10l1.2-4.5"/></svg></div>
+                  <h5>Latifah</h5>
+                  <span class="role">Pramusaji</span>
+                </div>
+                <div class="org-node">
+                  <div class="org-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="17" width="20" height="3" rx="1.5"/><path d="M4.5 17c0-3.2 1.8-5.2 4-5.2s4 2 4 5.2"/><path d="M8.5 11.8V10.5"/><path d="M15 17l-.7-7h5.4L19 17"/><path d="M18 10l1.2-4.5"/></svg></div>
+                  <h5>Sani</h5>
+                  <span class="role">Pramusaji</span>
+                </div>
+            </div>
+          </div>
+
+        </div><!-- /org-tree -->
       </div>
-      <div class="org-node">
-        <img src="assets/img/person/Ahmad%20Gusmar.png" alt="Ahmad Gusmar Harahap" loading="lazy">
-        <h5>Ahmad Gusmar Harahap</h5>
-        <span class="role">Komisaris</span>
-        <span class="sub">Kepala Regional 1 PTPN</span>
-      </div>
-    </div>
-  </div>
+    </section><!-- /Struktur -->
 
-  <div class="org-stem"></div>
-
-  <div class="text-center" data-aos="fade-up"><span class="org-label">Direksi</span></div>
-  <div class="org-box" data-aos="fade-up">
-    <div class="org-node">
-      <img src="assets/img/person/Amin%20Jatmiko.webp" alt="Rahmanto Amin Jatmiko" loading="lazy">
-      <h5>Rahmanto Amin Jatmiko</h5>
-      <span class="role">Direktur</span>
-    </div>
-  </div>
-
-  <div class="org-split" data-aos="fade-up">
-    <div class="org-box">
-      <div class="org-node">
-        <img src="assets/img/person/Siahaan.png" alt="Ipan Gumara Siahaan" loading="lazy">
-        <h5>Ipan Gumara Siahaan</h5>
-        <span class="role">Senior Executive Vice President</span>
-        <span class="sub">Operasi</span>
-      </div>
-    </div>
-    <div class="org-box">
-      <div class="org-node">
-        <img src="assets/img/person/Zulianto.png" alt="Zulianto" loading="lazy">
-        <h5>Zulianto</h5>
-        <span class="role">Senior Executive Vice President</span>
-        <span class="sub">Dukungan Bisnis</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="mt-5 text-center" data-aos="fade-up">
-    <span class="org-label">Departemen</span>
-  </div>
-  <div class="org-depts" data-aos="fade-up">
-    <span class="org-dept"><i class="bi bi-journal-text"></i>Sekretaris Perusahaan</span>
-    <span class="org-dept"><i class="bi bi-cash-coin"></i>Keuangan &amp; Akuntansi</span>
-    <span class="org-dept"><i class="bi bi-gear-fill"></i>Produksi</span>
-    <span class="org-dept"><i class="bi bi-person-lines-fill"></i>SDM</span>
-    <span class="org-dept"><i class="bi bi-truck"></i>Logistik</span>
-    <span class="org-dept"><i class="bi bi-megaphone"></i>Pemasaran</span>
-    <span class="org-dept"><i class="bi bi-tools"></i>Pemeliharaan</span>
-    <span class="org-dept"><i class="bi bi-clipboard2-check"></i>Pengendalian Mutu &amp; Penelitian</span>
-    <span class="org-dept"><i class="bi bi-search"></i>Audit Internal</span>
-  </div>
-
-  <div class="mt-4 text-center" data-aos="fade-up">
-    <a href="assets/img/person/organisasi2.png" class="glightbox btn btn-sm" style="border:1px solid var(--accent-color);color:var(--accent-color);border-radius:50px;padding:.4rem 1.2rem;">
-      <i class="bi bi-diagram-3 me-1"></i>Lihat bagan lengkap
-    </a>
-  </div>
-
-</div>
-
-    <!-- ===================== PRODUK ===================== -->
-    <section id="produk" class="services section">
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="services section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Produk yang Dihasilkan</h2>
-        <p>Produk turunan kelapa sawit hasil proses refinery dan fraksinasi</p>
+        <h2>Menu Kami</h2>
+        <p>Hidangan khas Korea dengan harga ramah di kantong</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-center mb-5">
+        <div class="row align-items-stretch mb-5 menu-intro-row">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
             <div class="intro-content">
-              <div class="section-badge mb-3">
-                <i class="bi bi-star-fill"></i>
-                <span>PRODUK KAMI</span>
-              </div>
-              <h2 class="section-heading mb-3">Dari CPO menjadi produk bernilai tambah</h2>
+              <h2 class="section-heading section-heading-pill mb-3">Cita rasa Korea yang halal dan terjangkau</h2>
               <p class="section-description mb-4">
-                Bahan baku berupa <em>Crude Palm Oil</em> (CPO) diolah melalui proses refinery dan fraksinasi
-                dengan pengendalian kualitas yang ketat. Produk dikelompokkan dalam dua kategori,
-                yaitu <strong>bulk</strong> dan <strong>ritel</strong>.
+                Pilih dari 16 menu kami, mulai dari ayam goreng Korea sebagai menu unggulan, nasi dan mie khas Korea,
+                minuman, sampai hidangan pendamping. Semua makanan dan minuman <strong>halal</strong>.
               </p>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
-              <img src="assets/img/features/produk.png" alt="Produk INL" class="img-fluid">
+            <div class="hero-visual text-center" data-aos="fade-left" data-aos-delay="150">
+              <img src="assets/img/about/Hidangan Sarangeui Oppa 2.jpg" alt="Hidangan Sarangeui Oppa" class="menu-photo">
             </div>
           </div>
         </div>
 
         <ul class="nav nav-pills prod-tabs" id="prodTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="bulk-tab" data-bs-toggle="pill" data-bs-target="#bulk" type="button" role="tab" aria-controls="bulk" aria-selected="true"><i class="bi bi-truck me-2"></i>Produk Bulk</button>
+            <button class="nav-link active" id="makanan-tab" data-bs-toggle="pill" data-bs-target="#makanan" type="button" role="tab" aria-controls="makanan" aria-selected="true"><svg class="me-2" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.125em" aria-hidden="true"><path d="M3 11h18a9 9 0 0 1-18 0z"/><path d="M9 21h6"/><path d="M8 7c0-1 1-1 1-2.5M12 7c0-1 1-1 1-2.5M16 7c0-1 1-1 1-2.5"/></svg>Makanan</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="retail-tab" data-bs-toggle="pill" data-bs-target="#retail" type="button" role="tab" aria-controls="retail" aria-selected="false"><i class="bi bi-bag me-2"></i>Produk Ritel</button>
+            <button class="nav-link" id="minuman-tab" data-bs-toggle="pill" data-bs-target="#minuman" type="button" role="tab" aria-controls="minuman" aria-selected="false"><i class="bi bi-cup-straw me-2"></i>Minuman</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pendamping-tab" data-bs-toggle="pill" data-bs-target="#pendamping" type="button" role="tab" aria-controls="pendamping" aria-selected="false"><svg class="me-2" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.125em" aria-hidden="true"><rect x="7.5" y="3" width="9" height="5" rx="2.5"/><rect x="7.5" y="9.5" width="9" height="5" rx="2.5"/><rect x="7.5" y="16" width="9" height="5" rx="2.5"/><path d="M12 1v2M12 8v1.5M12 14.5V16M12 21v2"/></svg>Hidangan Pendamping</button>
           </li>
         </ul>
 
         <div class="tab-content">
 
-          <!-- ===== BULK ===== -->
-          <div class="tab-pane fade show active" id="bulk" role="tabpanel" aria-labelledby="bulk-tab">
+          <div class="tab-pane fade show active" id="makanan" role="tabpanel" aria-labelledby="makanan-tab">
             <div class="prod-lead">
-              <p class="mb-2">Diproduksi dengan mesin modern, tersertifikasi nasional dan internasional, dan dijual per satuan ton.</p>
-              <p class="prod-export mb-0"><i class="bi bi-globe-asia-australia me-1"></i>Telah diekspor ke Bangladesh, Pakistan, Korea Selatan, UEA, India, Tanzania, Senegal, Nigeria, Yordania, Sri Lanka, Sudan, AS, Kroasia, dan Tiongkok.</p>
+              <p class="mb-0">Ayam goreng Korea, nasi, mie, dan sup khas Korea. Sebagian menu tersedia dalam versi lebih pedas.</p>
             </div>
             <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pcard">
-              <img src="assets/img/features/CPO.png" alt="Crude Palm Oil" loading="lazy">
-              <div class="pcard-body">
-                <h5>Crude Palm Oil (CPO)</h5>
-                <p>Minyak mentah dari daging buah sawit. Bahan baku industri pangan, nonpangan, dan biodiesel.</p>
-                <ul class="pspec"><li><span>FFA (palmitat)</span><span>maks 5,0%</span></li><li><span>M&amp;I</span><span>maks 0,5%</span></li></ul>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Honey Butter Chicken.png" alt="Honey Butter Chicken" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Honey Butter Chicken</h5>
+                    <p>3 sayap ayam goreng renyah dengan saus madu dan mentega.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp29.000</span></li></ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pcard">
-              <img src="assets/img/features/PFAD.jpg" alt="PFAD" loading="lazy">
-              <div class="pcard-body">
-                <h5>PFAD</h5>
-                <p>Distilat asam lemak sawit dari proses refinery. Dipakai untuk sabun, pakan ternak, oleokimia, dan biodiesel.</p>
-                <ul class="pspec"><li><span>FFA (palmitat)</span><span>min 70%</span></li><li><span>M&amp;I</span><span>maks 1%</span></li><li><span>Saponifiable matter</span><span>min 95%</span></li></ul>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pcard">
+                  <img src="assets/img/about/Samyang Buldak Chicken.png" alt="Samyang Buldak Chicken" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Samyang Buldak Chicken</h5>
+                    <p>3 sayap ayam goreng renyah dengan saus manis berempah. Pilih tingkat kepedasan 1, 2, atau 3.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp32.000</span></li></ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="pcard">
-              <img src="assets/img/features/RBDPO.jpg" alt="RBD Palm Oil" loading="lazy">
-              <div class="pcard-body">
-                <h5>RBD Palm Oil</h5>
-                <p>Minyak sawit yang telah dimurnikan, diputihkan, dan dihilangkan baunya. Untuk minyak goreng, shortening, dan margarin.</p>
-                <ul class="pspec"><li><span>FFA (palmitat)</span><span>maks 0,1%</span></li><li><span>M&amp;I</span><span>maks 0,1%</span></li><li><span>Iodine Value</span><span>50 – 55</span></li><li><span>Titik leleh</span><span>36 – 39°C</span></li><li><span>Warna (5¼ Lovibond)</span><span>maks 3 Red</span></li></ul>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="pcard">
+                  <img src="assets/img/about/Seaweed Chicken.png" alt="Seaweed Chicken" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Seaweed Chicken</h5>
+                    <p>3 sayap ayam goreng renyah dengan bumbu tabur rasa rumput laut.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp29.000</span></li></ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pcard">
-              <img src="assets/img/features/RBDPOlein.jpg" alt="RBD Palm Olein" loading="lazy">
-              <div class="pcard-body">
-                <h5>RBD Palm Olein</h5>
-                <p>Fraksi cair hasil fraksinasi RBD Palm Oil. Untuk minyak goreng dan salad oil.</p>
-                <table class="table table-sm olein-tabs mb-0 mt-auto">
-                  <thead><tr><th></th><th>IV 56</th><th>IV 58</th><th>IV 60</th></tr></thead>
-                  <tbody>
-                    <tr><td>FFA</td><td>0,1%</td><td>0,1%</td><td>0,1%</td></tr>
-                    <tr><td>M&amp;I</td><td>0,1%</td><td>0,1%</td><td>0,1%</td></tr>
-                    <tr><td>MP / CP</td><td>24°C</td><td>8°C</td><td>6°C</td></tr>
-                    <tr><td>Warna</td><td>3 R</td><td>3 R</td><td>2 R</td></tr>
-                  </tbody>
-                </table>
-                <small>Semua nilai maksimum. MP = melting point (IV 56), CP = cloud point (IV 58 &amp; 60).</small>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Nuclear Chicken.png" alt="Nuclear Chicken" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Nuclear Chicken</h5>
+                    <p>3 sayap ayam goreng renyah dengan tingkat kepedasan ekstrem.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp35.000</span></li></ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pcard">
-              <img src="assets/img/features/RBDPalmStearin.jpg" alt="RBD Palm Stearin" loading="lazy">
-              <div class="pcard-body">
-                <h5>RBD Palm Stearin</h5>
-                <p>Fraksi padat RBD Palm Oil. Bahan shortening, margarin, specialty fat, dan oleokimia.</p>
-                <ul class="pspec"><li><span>FFA (palmitat)</span><span>maks 0,2%</span></li><li><span>M&amp;I</span><span>maks 0,15%</span></li><li><span>Iodine Value</span><span>maks 48</span></li><li><span>Titik leleh</span><span>min 44°C</span></li><li><span>Warna (5¼ Lovibond)</span><span>maks 3 Red</span></li></ul>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pcard">
+                  <img src="assets/img/about/Bibimbap.png" alt="Bibimbap" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Bibimbap</h5>
+                    <p>Nasi campur khas Korea dengan daging, telur, sayur, jamur, dan saus pasta cabai Korea.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp28.000</span></li></ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="pcard">
+                  <img src="assets/img/about/Kimbab.png" alt="Kimbap" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Kimbap</h5>
+                    <p>Nasi gulung rumput laut dengan isian daging, telur, acar, dan sayur.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp30.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Ramyun.png" alt="Ramyun" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Ramyun</h5>
+                    <p>Mie instan Korea dengan telur setengah matang dan taburan rumput laut.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp18.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pcard">
+                  <img src="assets/img/about/Kimchi Jigae.png" alt="Kimchi Jjigae" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Kimchi Jjigae</h5>
+                    <p>Sup kimchi asam pedas dengan isian daging sapi, sosis, jamur enoki, dan tahu.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp32.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="pcard">
+                  <img src="assets/img/about/Teokbokki.png" alt="Tteokbokki" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Tteokbokki</h5>
+                    <p>Kue beras dan odeng dengan saus pedas manis yang kental.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp25.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Rabokki.png" alt="Rabokki" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Rabokki</h5>
+                    <p>Mie pedas manis berkuah kental dengan kue beras dan odeng.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp28.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- ===== RITEL ===== -->
-          <div class="tab-pane fade" id="retail" role="tabpanel" aria-labelledby="retail-tab">
+          <div class="tab-pane fade" id="minuman" role="tabpanel" aria-labelledby="minuman-tab">
             <div class="prod-lead">
-              <p class="mb-2">Minyak goreng berkualitas internasional untuk pasar dalam negeri, didistribusikan lewat jaringan distributor.</p>
-              <p class="prod-export mb-0"><i class="bi bi-shop me-1"></i>Tertarik menjadi distributor resmi? <a href="#sosial">Hubungi layanan pelanggan kami</a>.</p>
+              <p class="mb-0">Minuman segar untuk menemani hidangan pedas.</p>
             </div>
             <div class="row g-4 justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pcard">
-              <img src="assets/img/features/nusakita.jpg" alt="Minyak goreng Nusakita" loading="lazy">
-              <div class="pcard-body">
-                <h5>Nusakita</h5>
-                <p>Minyak goreng premium dari buah sawit pilihan, diproses dengan teknologi refinery modern. Dipasarkan di Jabodetabek melalui distributor CV. Cipta Usaha Nagari (Bekasi).</p>
-                <ul class="pspec"><li><span>Kemasan</span><span>Pouch 1 L &amp; 2 L</span></li><li><span>Segmen</span><span>Menengah ke atas</span></li></ul>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Boricha.jpg" alt="Boricha" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Boricha</h5>
+                    <p>Teh gandum khas Korea, bisa pakai es atau tanpa es.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp3.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pcard">
+                  <img src="assets/img/about/Teh.jpg" alt="Teh" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Teh</h5>
+                    <p>Teh, tersedia panas atau dingin.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp5.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="pcard">
+                  <img src="assets/img/about/Bingsu.jpg" alt="Bingsu" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Bingsu</h5>
+                    <p>Es serut autentik Korea dengan teh hijau dengan kacang merah.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp22.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Es Leci Soda.jpg" alt="Es Leci Soda" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Es Leci Soda</h5>
+                    <p>Minuman soda leci yang segar, disajikan dingin.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp14.000</span></li></ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pcard">
-              <img src="assets/img/features/salvaco.jpg" alt="Minyak goreng Salvaco" loading="lazy">
-              <div class="pcard-body">
-                <h5>Salvaco</h5>
-                <p>Minyak goreng kualitas ekspor dengan IV 60 (tidak mudah menghitam) dan cloud point 7°C. Tersebar di Sumut, Aceh, Riau, Kepri, Sumbar, Tanah Karo, dan Jakarta.</p>
-                <ul class="pspec"><li><span>Kemasan</span><span>Pouch 1 L &amp; 2 L</span></li><li><span>Segmen</span><span>Menengah ke atas</span></li></ul>
+
+          <div class="tab-pane fade" id="pendamping" role="tabpanel" aria-labelledby="pendamping-tab">
+            <div class="prod-lead">
+              <p class="mb-0">Pelengkap untuk menu utama.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pcard">
+                  <img src="assets/img/about/Odeng.jpg" alt="Odeng" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Odeng</h5>
+                    <p>Kue ikan khas Korea dengan kuah kaldu ikan segar.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp15.000</span></li></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pcard">
+                  <img src="assets/img/about/Kimchi.jpg" alt="Kimchi" loading="lazy">
+                  <div class="pcard-body">
+                    <h5>Kimchi</h5>
+                    <p>Sayur fermentasi khas Korea sebagai teman makan.</p>
+                    <ul class="pspec"><li><span>Harga</span><span>Rp5.000</span></li></ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="pcard">
-              <img src="assets/img/features/INLBrand.jpg" alt="Minyak goreng merek INL" loading="lazy">
-              <div class="pcard-body">
-                <h5>INL Brand</h5>
-                <p>Hadir untuk segmen menengah ke bawah. Diluncurkan 15 Desember 2021; segera hadir dalam standing pouch 1,8 L dan 900 mL.</p>
-                <ul class="pspec"><li><span>Kemasan</span><span>Pillow 900, 450 &amp; 250 mL</span></li><li><span>Segmen</span><span>Menengah ke bawah</span></li></ul>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Produk -->
-<!-- ===================== SERTIFIKASI ===================== -->
-<section id="sertifikasi" class="section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Sertifikasi</h2>
-    <p>Sebagai produsen turunan CPO berstandar internasional, kami melengkapi dan selalu memperbarui seluruh sertifikasi agar pelanggan di dalam maupun luar negeri yakin bekerja sama dengan kami.</p>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4">
+    </section><!-- /Menu -->
 
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo"><img src="assets/img/services/HALAL.png" alt="Logo Halal Indonesia" loading="lazy"></div>
-          <div class="cert-body">
-            <h5>Sertifikat Halal</h5>
-            <p>Jaminan bahwa bahan, proses produksi, dan produk INL telah diperiksa dan dinyatakan halal sesuai ketentuan yang berlaku di Indonesia.</p>
-            <div class="cert-no"><span>No. Sertifikat</span><span>00080094270319</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo cert-text">
-            <span class="cert-bpom">BPOM RI</span>
-            <span class="cert-bpom-no">MD 208102001231</span>
-          </div>
-          <div class="cert-body">
-            <h5>Izin Edar BPOM</h5>
-            <p>Izin dari Badan Pengawas Obat dan Makanan yang menyatakan produk pangan kami aman, bermutu, dan sah diedarkan kepada konsumen.</p>
-            <div class="cert-no"><span>Nomor izin edar</span><span>BPOM RI MD 208102001231</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo"><img src="assets/img/services/SNI.png" alt="Logo SNI 7709:2019" loading="lazy"></div>
-          <div class="cert-body">
-            <h5>SNI 7709:2019</h5>
-            <p>Tanda Standar Nasional Indonesia untuk minyak goreng sawit. Produk telah diuji dan memenuhi persyaratan mutu nasional.</p>
-            <div class="cert-no"><span>Lembaga sertifikasi</span><span>LSPr-015-IDN</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo"><img src="assets/img/services/SEDEX.png" alt="Logo Sedex" loading="lazy"></div>
-          <div class="cert-body">
-            <h5>Sedex</h5>
-            <p>Platform global untuk berbagi data praktik bisnis yang etis dan bertanggung jawab di rantai pasok, mencakup standar tenaga kerja, K3, lingkungan, dan etika usaha.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo"><img src="assets/img/services/KAN.png" alt="Logo KAN dan MHI-SMAP" loading="lazy"></div>
-          <div class="cert-body">
-            <h5>Terakreditasi KAN</h5>
-            <p>Sertifikasi sistem manajemen oleh lembaga yang diakreditasi Komite Akreditasi Nasional (KAN), sehingga hasil penilaiannya diakui secara nasional.</p>
-            <div class="cert-no"><span>No. Akreditasi / Sertifikat</span><span>LSSM-092-IDN · 005/MHI-SMAP</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="cert-card">
-          <div class="cert-logo"><img src="assets/img/services/ISO.png" alt="Logo ISO 9001 Bureau Veritas" loading="lazy"></div>
-          <div class="cert-body">
-            <h5>ISO 9001</h5>
-            <p>Standar internasional sistem manajemen mutu. Sertifikasi oleh Bureau Veritas menunjukkan proses produksi INL berjalan konsisten dan terus diperbaiki.</p>
-            <div class="cert-no"><span>Lembaga sertifikasi</span><span>Bureau Veritas</span></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <p class="cert-note">Bukti legalitas dan mutu produk INL</p>
-  </div>
-
-</section>
-    <!-- ===================== LOKASI / MAPS ===================== -->
+    <!-- ===================== LOKASI ===================== -->
     <section id="lokasi" class="contact section light-background">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Lokasi &amp; Alamat</h2>
-        <p>Temukan lokasi PT Industri Nabati Lestari</p>
+        <h2>Lokasi dan Alamat</h2>
+        <p>Kunjungi Sarangeui Oppa di Minomartani, Sleman</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -556,21 +607,17 @@
                   <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
                   <div class="info-content">
                     <h5>Alamat</h5>
-                    <p>Kawasan Ekonomi Khusus (KEK) Sei Mangkei,<br>Kabupaten Simalungun, Sumatera Utara</p>
+                    <p>Jl. Gurameh I Perumnas No. 1, Mladangan, Minomartani, Kec. Ngaglik, Kab. Sleman, Daerah Istimewa Yogyakarta 55581</p>
                   </div>
                 </div>
 
                 <div class="info-item mb-4">
-                  <div class="info-icon"><i class="bi bi-globe"></i></div>
+                  <div class="info-icon"><i class="bi bi-clock-fill"></i></div>
                   <div class="info-content">
-                    <h5>Website Resmi</h5>
-                    <p><a href="https://inl.co.id" target="_blank" rel="noopener">inl.co.id</a></p>
+                    <h5>Jam Buka</h5>
+                    <p>Senin sampai Sabtu, 12.00 - 20.00 WIB (pesanan terakhir 19.30)<br>Tutup setiap hari Minggu</p>
                   </div>
                 </div>
-
-                <a href="https://share.google/GN3BiTkamvtPP2vNR" target="_blank" rel="noopener" class="btn btn-primary">
-                  <i class="bi bi-map"></i> Buka di Google Maps
-                </a>
 
               </div>
             </div>
@@ -579,11 +626,17 @@
           <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
             <div class="map-wrapper">
               <iframe
-                src="https://www.google.com/maps?q=PT+Industri+Nabati+Lestari+Sei+Mangkei&output=embed"
-                title="Peta lokasi PT Industri Nabati Lestari"
+                src="https://maps.google.com/maps?q=Sarangeui%20Oppa%20Jl.%20Gurameh%20I%20Perumnas%20No.1%20Minomartani%20Sleman&amp;hl=id&amp;output=embed"
+                title="Peta lokasi Sarangeui Oppa"
                 allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- Kartu alamat milik sendiri, menutupi kartu bawaan Google yang bertuliskan "Buka di Maps" -->
+              <div class="map-card">
+                <strong>Sarangeui Oppa</strong>
+                <span>Jl. Gurameh I Perumnas No. 1, Mladangan, Minomartani, Kec. Ngaglik, Kab. Sleman</span>
+                <a href="https://maps.app.goo.gl/W5m5aXuYF4ScRvE87" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Buka di Peta</a>
+              </div>
             </div>
           </div>
 
@@ -592,62 +645,59 @@
 
     </section><!-- /Lokasi -->
 
-    <!-- ===================== SOSIAL MEDIA & KONTAK ===================== -->
+    <!-- ===================== SOSIAL MEDIA ===================== -->
     <section id="sosial" class="section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Sosial Media &amp; Kontak</h2>
-        <p>Ikuti kabar terbaru dan hubungi PT Industri Nabati Lestari</p>
+        <h2>Sosial Media dan Kontak</h2>
+        <p>Ikuti kabar terbaru dan pesan makanan favoritmu</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-4 justify-content-center">
 
-          <!-- Instagram -->
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
             <div class="social-card text-center">
               <i class="bi bi-instagram main-icon"></i>
               <h5 class="mt-3">Instagram</h5>
-              <p>@official.inl</p>
-              <a href="https://www.instagram.com/official.inl?exln=ejM1ZWU0OG1sZzQ0" target="_blank" rel="noopener" class="btn btn-primary">Kunjungi Instagram</a>
+              <p>@sarangeui_oppa</p>
+              <a href="https://www.instagram.com/sarangeui_oppa/" target="_blank" rel="noopener" class="btn btn-primary">Kunjungi Instagram</a>
             </div>
           </div>
 
-          <!-- Website resmi -->
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="250">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="social-card text-center">
-              <i class="bi bi-globe2 main-icon"></i>
-              <h5 class="mt-3">Website Resmi</h5>
-              <p>inl.co.id</p>
-              <a href="https://inl.co.id" target="_blank" rel="noopener" class="btn btn-outline-primary">Kunjungi Website</a>
+              <i class="bi bi-whatsapp main-icon"></i>
+              <h5 class="mt-3">WhatsApp</h5>
+              <p>+62 897-0213-456</p>
+              <a href="https://wa.me/628970213456?text=Halo%20Sarangeui%20Oppa%2C%20saya%20mau%20pesan" target="_blank" rel="noopener" class="btn btn-primary">Kirim Pesan</a>
             </div>
           </div>
 
-          <!-- Whistleblowing System (WBS) -->
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-            <div class="wbs-box">
-              <h5 class="mb-1"><i class="bi bi-shield-exclamation text-primary"></i> Whistleblowing System (WBS)</h5>
-              <p class="info-note mb-3">Saluran resmi untuk menyampaikan pengaduan atau pelaporan dugaan pelanggaran kepada perusahaan.</p>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="social-card text-center">
+              <!-- Ikon GoFood: lingkaran merah, sendok dan garpu (versi sederhana) -->
+              <svg class="brand-logo" viewBox="0 0 48 48" role="img" aria-label="GoFood"><circle cx="24" cy="24" r="24" fill="#EE2737"/><g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M17 12v8a3 3 0 0 0 3 3v13M14 12v8M20 12v8"/><path d="M32 36V12c-3 2-5 6-5 11h5"/></g></svg>
+              <h5 class="mt-3">GoFood</h5>
+              <p>Pesan antar lewat GoFood</p>
+              <a href="https://gofood.co.id/yogyakarta/restaurant/sarangeui-oppa-jalan-gurameh-1030a8da-572a-4bae-a8f2-9cacc2a5ea13" target="_blank" rel="noopener" class="btn btn-primary">Pesan di GoFood</a>
+            </div>
+          </div>
 
-              <div class="wbs-item">
-                <i class="bi bi-globe"></i>
-                <a href="https://wbs.inl.co.id" target="_blank" rel="noopener">wbs.inl.co.id</a>
-              </div>
-              <div class="wbs-item">
-                <i class="bi bi-whatsapp"></i>
-                <a href="https://wa.me/628116133357" target="_blank" rel="noopener">0811-6133-357</a>
-              </div>
-              <div class="wbs-item">
-                <i class="bi bi-envelope-fill"></i>
-                <a href="mailto:wbs_gercep@inl.co.id">wbs_gercep@inl.co.id</a>
-              </div>
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="social-card text-center">
+              <!-- Ikon GrabFood: lingkaran hijau, huruf G (versi sederhana) -->
+              <svg class="brand-logo" viewBox="0 0 48 48" role="img" aria-label="GrabFood"><circle cx="24" cy="24" r="24" fill="#00B14F"/><path d="M34 17a12 12 0 1 0 2 8h-12" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h5 class="mt-3">GrabFood</h5>
+              <p>Pesan antar lewat GrabFood</p>
+              <a href="https://app.grab.com/s/dX1vNjPv" target="_blank" rel="noopener" class="btn btn-primary">Pesan di GrabFood</a>
             </div>
           </div>
 
         </div>
       </div>
 
-    </section><!-- /Sosial Media & Kontak -->
+    </section><!-- /Sosial Media -->
 
   </main>
 
@@ -660,40 +710,39 @@
 
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">PT Industri Nabati Lestari</span>
+              <span class="sitename">Sarangeui Oppa</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Kawasan Ekonomi Khusus (KEK) Sei Mangkei</p>
-              <p>Kabupaten Simalungun, Sumatera Utara</p>
-              <p class="mt-3"><strong>WhatsApp:</strong> <span>0811-6133-357</span></p>
-              <p><strong>Email:</strong> <span>wbs_gercep@inl.co.id</span></p>
-              <p><strong>Instagram:</strong> <span>@official.inl</span></p>
+              <p>Jl. Gurameh I Perumnas No. 1, Mladangan, Minomartani</p>
+              <p>Kec. Ngaglik, Kab. Sleman, DI Yogyakarta 55581</p>
+              <p class="mt-3"><strong>WhatsApp:</strong> <span>+62 897-0213-456</span></p>
+              <p><strong>Instagram:</strong> <span>@sarangeui_oppa</span></p>
+              <p><strong>Jam buka:</strong> <span>Senin - Sabtu, 12.00 - 20.00 WIB</span></p>
             </div>
             <div class="social-links d-flex mt-4">
-              <a href="https://www.instagram.com/official.inl?exln=ejM1ZWU0OG1sZzQ0" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-              <a href="https://wa.me/628116133357" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i></a>
-              <a href="https://inl.co.id" target="_blank" rel="noopener"><i class="bi bi-globe"></i></a>
+              <a href="https://www.instagram.com/sarangeui_oppa/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/628970213456?text=Halo%20Sarangeui%20Oppa%2C%20saya%20mau%20pesan" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
 
           <div class="col-lg-3 col-6 footer-links">
-            <h4>Menu</h4>
+            <h4>Halaman</h4>
             <ul>
               <li><a href="#hero">Beranda</a></li>
-              <li><a href="#sejarah">Sejarah</a></li>
-              <li><a href="#struktur">Struktur Perusahaan</a></li>
-              <li><a href="#produk">Produk</a></li>
-              <li><a href="#sertifikasi">Sertifikasi</a></li>
+              <li><a href="#profil">Profil</a></li>
+              <li><a href="#struktur">Struktur</a></li>
+              <li><a href="#menu">Menu</a></li>
               <li><a href="#lokasi">Lokasi</a></li>
               <li><a href="#sosial">Sosial Media</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-6 footer-links">
-            <h4>Produk</h4>
+            <h4>Menu Kami</h4>
             <ul>
-              <li><a href="#produk">Produk Bulk</a></li>
-              <li><a href="#produk">Produk Ritel</a></li>
+              <li><a href="#menu">Makanan</a></li>
+              <li><a href="#menu">Minuman</a></li>
+              <li><a href="#menu">Hidangan Pendamping</a></li>
             </ul>
           </div>
 
@@ -702,13 +751,8 @@
     </div>
 
     <div class="copyright text-center">
-      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-        <div class="d-flex flex-column align-items-center align-items-lg-start">
-          <div class="credits">
-            <!-- Link kredit template sebaiknya tetap dipertahankan (lisensi BootstrapMade). -->
-            Template oleh <a href="https://bootstrapmade.com/">@industrinabatilestari</a>
-          </div>
-        </div>
+      <div class="container">
+        <p class="mb-0">&copy; 2026 Sarangeui Oppa, Yogyakarta.</p>
       </div>
     </div>
 
